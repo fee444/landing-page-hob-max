@@ -1,0 +1,156 @@
+/*MEDIA QUERY 480*/
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  section {
+    scroll-margin-top: 120px;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 24px;
+    left: -124px;
+    position: static;
+    height: 5px;
+
+  }
+
+  .menu__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .menu__logo {
+    max-width: 100px;
+  }
+
+  .menu__item--button {
+    margin: 0;
+  }
+
+  .header {
+    margin-top: 128px !important;
+  }
+
+  .footer__link {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .menu__logo-img {
+    position: relative;
+    left: 7px;
+  }
+
+  .header_channels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .offer__price {
+    font-size: 3.5rem;
+  }
+
+  .header__title {
+    font-size: 3.3rem;
+  }
+
+  .subscription__plans {
+    flex-direction: column;
+  }
+
+  .subscription__details {
+    margin-bottom: 1px;
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(1):hover) .subscription__card:nth-child(2) {
+    transform: rotateY(0deg);
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(2):hover) .subscription__card:nth-child(1) {
+    transform: rotateY(0deg);
+  }
+
+  .subscription__card {
+    margin-top: 30px;
+  }
+
+  .contents__container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10px;
+    padding-bottom: 20px;
+    box-sizing: content-box
+  }
+
+  .contents__image {
+    flex: 0 0 auto;
+    width: 200px;
+  }
+  .contents__cards:hover{
+    transform: scale(1.03);
+    border: 2px solid var(--tertiary-color);
+  
+  }
+}
+
+/*MEDIA QUERY 800*/
+@media screen and (min-width: 536px){
+.subscription__plan{
+  display: block;
+  margin-bottom: 48px;
+}
+.menu{
+  flex-direction: row;
+  position: static;
+  
+}
+.menu__logo {
+  max-width: 150px;
+  
+}
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .subscription__plans:has(.subscription__card:nth-child(1):hover) .subscription__card:nth-child(2) {
+    transform: rotateY(0deg);
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(2):hover) .subscription__card:nth-child(1) {
+    transform: rotateY(0deg);
+  }
+  .subscription__plan {
+    display: block;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1001px)  {
+  .subscription__plan {
+    display: block;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-bottom: 90px;
+  }
+}
+
+/* SCREEN LOGIN */
+@media screen and (max-width: 480px) {
+  body {
+    height: auto;
+  }
+
+  .login__actions .button {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .login__link {
+    margin: 0;
+  }
+}

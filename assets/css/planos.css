@@ -1,0 +1,88 @@
+.subscription {
+    background: url(/assets/images/background-movies-series.png);
+    background-size: cover;
+    position: relative;
+  }
+  
+  .subscription__plans {
+    display: flex;
+    justify-content: space-between;
+    perspective: 2000px;
+    perspective-origin: top;
+    gap: 80px;
+    margin: 40px 0px;
+  }
+  
+  .subscription__plans:has(.subscription__card:nth-child(1):hover) .subscription__card:nth-child(2) {
+    transform: rotateY(-45deg);
+  }
+  
+  .subscription__plans:has(.subscription__card:nth-child(2):hover) .subscription__card:nth-child(1) {
+    transform: rotateY(45deg);
+  }
+  
+  
+  .subscription__card {
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    transition: transform 1s ease-in-out 0s;
+  }
+  
+  .subscription__plan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  .subscription__price {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--secondary-color);
+    font-weight: 700;
+  }
+  .subscription__price .text--small {
+    color: var(--text-color);
+  }
+  
+  .text--small {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .subscription__details {
+    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-left: 14px;
+    list-style: none;
+  }
+
+  .container {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding: 24px;
+  }
+  .subscription__details::marker {
+    content: "+";
+    font-size: 2rem;
+    margin: 0 8px 0 0;
+  }
+  
+  ::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+  }
+  #teste {
+    display: block;
+    margin-top: -130px;
+  }

@@ -1,0 +1,52 @@
+.contents__container {
+  display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .contents__cards{
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
+  }
+  .contents__cards:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+  
+  }
+  .contents__cards:hover .contents__image{
+    opacity: 0;
+  }
+  .contents__image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+  }
+  /*HOVER DA HBO*/
+  .contents__cards:nth-child(1):hover{
+    background-image: url(/assets/images/hbo-hover_0.webp);
+  }
+  /*HOVER DA MAX */
+  .contents__cards:nth-child(2):hover{
+    background-image: url(/assets/images/MAX-Hover.webp);
+  }
+  /* HOVER DA DC */
+  .contents__cards:nth-child(3):hover{
+    background-image: url(/assets/images/DC-Hover.webp);
+  }
+  /*HOVER DA HB */
+  .contents__cards:nth-child(4):hover{
+    background-image: url(/assets/images/WB-Hover.webp);
+  }
+  /*HOVER DO CN */
+  .contents__cards:nth-child(5):hover{
+    background-image: url(/assets/images/CN-Hover.png);
+  }
+  /*HOVER DA UCL */
+  .contents__cards:nth-child(6):hover{
+    background-image: url(/assets/images/UCL-Hover.webp);
+  }

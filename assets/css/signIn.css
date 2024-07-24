@@ -1,0 +1,79 @@
+@import url(/assets/css/global.css);
+body {
+    background-image: url("../images/background-movies-series.png");
+    background-size: cover;
+    height: 100vh;
+  }
+
+.menu {
+    width: 100%;
+    padding: 16px 32px;
+    top: 0px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    font-family: "Quicksand", cursive;
+    padding: 24px;
+}
+
+.login {
+    display: flex;
+    position: relative;
+    top: 50px;
+    background-color: var(--form-bg-color);
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.login__title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+
+.login__label {
+    text-align: left;
+}
+
+.login__field {
+    background: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    color: var(--text-color);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 1rem;
+}
+
+.login__field::placeholder {
+    color: var(--form-field-placeholder);
+}
+
+.login__field:invalid {
+    border-color: var(--form-field-error);
+}
+
+.login__actions {
+    margin-top: 24px;
+    text-align: left;
+}
+
+.login__link {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 30px;
+}
